@@ -1,0 +1,66 @@
+html{
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #aad4cf;
+}
+
+/* positioning the wrapper */
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* styling the navigation */
+.navigation ul {
+    padding-left: 0;
+}
+
+.navigation li {
+    display: inline;
+    text-transform: uppercase;
+}
+
+.navigation li::after {
+    content: "|";
+}
+
+.navigation li a {
+    padding: 100px;
+}
+
+/* adding styls to facts list  */
+.facts li a {
+    display: block;
+    list-style-type: circle;
+}
+
+/* using float to add the image to left and clearfix to keep the next content separated */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.float img {
+    width: 250px;
+    float: left;
+}
+
+.box {
+    height: 400px;
+    width: 500px;
+    
+    
+}
+
+
