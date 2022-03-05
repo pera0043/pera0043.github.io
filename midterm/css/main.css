@@ -66,12 +66,19 @@ body {
 
 form div {
     margin-bottom: 20px;
+
 }
 
-input {
+input[type=text], select {
     width: 100%;
     padding: 15px;
-    box-sizing:border-box
+    box-sizing:border-box;
+}
+
+.contact button {
+    background: transparent;
+    padding: 10px 10px;
+    border: 1px solid #000;
 }
 
 textarea {
@@ -85,6 +92,5 @@ textarea {
     border: 1px solid #000;
     stroke-width: 5px;
     padding: 40px 20px 20px 20px;
-    display: block;
+    display: block;  
 }
-
