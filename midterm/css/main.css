@@ -1,6 +1,6 @@
 html{
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif
 }
 
@@ -16,7 +16,7 @@ body {
 
 /* positioning the wrapper */
 .wrapper {
-    max-width: 1000px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -30,12 +30,15 @@ body {
     text-transform: uppercase;
 }
 
-.navigation li::after {
+.navigation li+li:before {
     content: "|";
 }
 
 .navigation li a {
-    padding: 100px;
+    padding: 0px 120px 0px 120px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
 }
 
 /* adding styls to facts list  */
@@ -59,8 +62,29 @@ body {
 .box {
     height: 400px;
     width: 500px;
-    
-    
 }
 
+form div {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    box-sizing:border-box
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    box-sizing:border-box
+}
+
+.container {
+    border: 1px solid #000;
+    stroke-width: 5px;
+    padding: 40px 20px 20px 20px;
+    display: block;
+}
 
