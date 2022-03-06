@@ -12,12 +12,34 @@ html{
 
 body {
     background-color: #aad4cf;
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
 
 /* positioning the wrapper */
 .wrapper {
     max-width: 1024px;
     margin: 0 auto;
+    background-color: #d4e9e7;
+}
+
+.content-container {
+    padding: 0px 12px 40px 12px;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.centered {
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    transform: translate(-40%, -40%);
+    font-size: 65px;
 }
 
 /* styling the navigation */
@@ -93,4 +115,9 @@ textarea {
     stroke-width: 5px;
     padding: 40px 20px 20px 20px;
     display: block;  
+    margin-bottom: 35px;
+}
+
+footer {
+    text-align: right;
 }
