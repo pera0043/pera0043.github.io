@@ -15,6 +15,24 @@ body {
     margin-top: 0px;
 }
 
+/* adding font styles to three different headings */
+h1 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
 /* positioning the wrapper */
 .wrapper {
     max-width: 1024px;
@@ -26,12 +44,16 @@ body {
     padding: 0px 12px 30px 12px;
 }
 
-/* adding text to the header image */
+/* adding text and styling the header image */
 .header {
     position: relative;
     text-align: center;
     color: white;
+}
+
+.header img {
     width: 100%;
+    height: auto;
 }
 
 .centered {
@@ -45,6 +67,7 @@ body {
 /* styling the navigation */
 .navigation ul {
     padding-left: 0;
+    margin-top: 0;
 }
 
 .navigation li {
@@ -52,11 +75,14 @@ body {
     text-transform: uppercase;
 }
 
-.navigation li+li:before {
+/* .navigation li+li:before {
     content: "";
     border-left: 2px solid #000;
     height: 55px;
-    
+} */
+
+.vertical-line {
+    border-left: 1px solid #000;
 }
 
 .navigation li a {
@@ -141,22 +167,4 @@ textarea {
 footer {
     text-align: right;
     margin-right: 18px;
-}
-
-/* adding font styles to three different headings */
-h1 {
-    font-size: 36px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-h2 {
-    font-size: 28px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-h3 {
-    font-size: 22px;
-    font-weight: 500;
 }

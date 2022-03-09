@@ -7,6 +7,7 @@
     <title>MTM6130 Midterm</title>
     <link href="css/main.css" rel="stylesheet">
 </head>
+
 <body>
     <!--adds wrapper to center web content to the middle-->
     <div class="wrapper">
@@ -16,15 +17,17 @@
         <div class="centered">Lone Starfish</div>
     </div>
 
+    <!--adds class only to story and contact to add the vertical line -->
     <section class="navigation">
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Story</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="vertical-line">Story</a></li>
+                <li><a href="#" class="vertical-line">Contact</a></li>
             </ul>
         </nav>
     </section>
+
     <div class="content-container">
     <!--adds a class to this section to use float and to clear the float -->
     <section class="float clearfix">
@@ -33,7 +36,7 @@
         <p>Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.</p>
     </section> 
 
-    <!--adds a class to this section so it will not overlap with the navigation list. -->
+    <!--adds a class to this section so it will not overlap with the navigation list below the header image. -->
     <section class="facts">
         <h2>Facts About Starfish</h2>
         <nav>
@@ -45,18 +48,18 @@
             </ul>
         </nav>
     </section>
-    
+    <!-- adding a class to contact box and separate divs to style the boxes -->
     <section class="contact">
         <h2>Contact to learn more</h2>
         <div class="container">
             <form action="contact.html" method="get">
             <div>
-                <label for="fullname">Your Name</label>
-                <input type="text" id="fullname" yourname="fullname">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="yourname">
             </div>
             <div>
                 <label for="email">Your Email</label>
-                <input type="text" id="email" email="your email">
+                <input type="text" id="email" name="youremail">
             </div>
             <div>
                 <label for="message">Your Message</label>
@@ -83,8 +86,6 @@
     </section>
     <footer>&copy; Lone Starfish.</footer>
         </div>
-    </section>
     </div>
-   </div>
 </body>
 </html>
