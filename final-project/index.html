@@ -16,8 +16,8 @@
     
 </head>
 <body>
-    <!--adds wrapper to center web content to the middle-->
-    <div class="wrapper">
+    <!--adds wrapper to each section to add different styles -->
+    <div class="wrapper-1">
     <header class="navigation">
         <img src="images/logo.png" alt="Logo">
         <nav>
@@ -36,86 +36,95 @@
             </div>
         </nav>
     </header>
+    </div>
     
     <div class="welcome">
     <img src="images/main-banner.jpg" alt="main-banner">
+    <div class="wrapper-2">
     <h1>Welcome to Three Star Media</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae perferendis, adipisci accusamus nisi inventore dolore? Modi, eaque. Omnis dolore, delectus, adipisci dignissimos quo culpa temporibus corrupti incidunt labore aperiam tempore!</p>
     <button type="submit">Connect with us <i class="fa-solid fa-caret-right"></i></button>
     </div>
+    </div>
 
-    <!--adding a class to each section to add styles-->
+    <!--adding a class to divide each section so i can add styles-->
     <section class="about">
-        <h1>About Us</h1>
+        <div class="wrapper-3">
+        <h2>About Us</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptatibus soluta deserunt eligendi! Consequatur corrupti molestias amet omnis asperiores similique autem debitis necessitatibus blanditiis doloremque veritatis, ipsam dolorem ullam numquam!</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis rerum sint dicta tenetur praesentium, dolores ad libero itaque incidunt, harum doloremque illo ratione eaque esse, magnam voluptate soluta adipisci porro?</p>
         <img src="images/about-us.jpg" alt="about us">
+        </div>
     </section>
 
-    <section class="services">
-        <h1>Our Services</h1>
+    <div class="wrapper-4">
+        <section class="services">
+        <h2>Our Services</h2>
         <img src="images/digital.jpg" alt="digital">
-        <h2>Digital Transformation</h2>
+        <h3>Digital Transformation</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias repellendus nisi expedita ea soluta ad, labore eos! Necessitatibus culpa enim officiis ea id sed, animi minus, nostrum rem molestiae facere.</p>
         <button class="btn">Digital Plans <i class="fa-solid fa-caret-right"></i></button>
     </section>
 
     <section>
         <img src="images/marketing.jpg" alt="marketing">
-        <h2>Marketing</h2>
+        <h3>Marketing</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias repellendus nisi expedita ea soluta ad, labore eos! Necessitatibus culpa enim officiis ea id sed, animi minus, nostrum rem molestiae facere.</p>
         <button class="btn"> Marketing Plans <i class="fa-solid fa-caret-right"></i></button>
     </section>
 
     <section>
         <img src="images/video.jpg" alt="video">
-        <h2>Video Production</h2>
+        <h3>Video Production</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quaerat nemo voluptas non expedita veniam sint quam? Deleniti, nam? Quia exercitationem excepturi accusantium delectus provident tenetur quisquam dolores aliquam optio?</p>
         <button class="btn"> Video Plans <i class="fa-solid fa-caret-right"></i></button>
     </section>
 
     <section>
         <img src="images/web.jpg" alt="web">
-        <h2>Web Development</h2>
+        <h3>Web Development</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque unde saepe possimus minus expedita quae consectetur cumque, aliquam esse tempora neque quasi! Est necessitatibus cumque sint nesciunt sapiente debitis odit!</p>
         <button class="btn"> Web Plans <i class="fa-solid fa-caret-right"></i></button>
     </section>
 
     <section>
         <img src="images/print.jpg" alt="print">
-        <h1>Print</h1>
+        <h3>Print</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque accusantium, fugit quo autem nam iste aspernatur quia dolorum minima quae neque impedit, eius natus, aliquid similique non. Enim, cum quia!</p>
         <button class="btn">Print Plans <i class="fa-solid fa-caret-right"></i></button>
     </section>
+    </div>
 
     <section class="vision">
         <img src="images/vision.jpg" alt="vision">
-        <h1>Our Vision</h1>
+        <div class="wrapper-5">
+        <h3>Our Vision</h3>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum voluptatem cumque molestias debitis ad exercitationem quisquam eius veritatis illum facere voluptate eveniet excepturi necessitatibus unde ipsa quas, sint, veniam amet.</p>
         <button class="btn"> Learn More <i class="fa-solid fa-caret-right"></i></button>
+        </div>
     </section>
 
     <section class="team">
-        <h1>Our Team</h1>
+        <h2>Our Team</h2>
         <img src="images/john.jpg" alt="john">
-        <h2>John Doe</h2>
+        <h3>John Doe</h3>
         <h3>CEO and Co-owner</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima officiis maxime necessitatibus nostrum non ab. Nihil consequatur, autem nulla officia, maiores accusamus facilis id saepe, accusantium ullam quisquam. Earum, quidem!</p>
     </section>
 
     <section>
         <img src="images/bob.jpg" alt="bob">
-        <h2>Rob Rite</h2>
+        <h3>Rob Rite</h3>
         <h3>CFO and Co-owner</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse harum nesciunt delectus quae. Fuga sapiente aut quaerat. Deleniti voluptas eveniet maiores commodi. Ratione earum sint nostrum eveniet! Dolore, sapiente neque?</p>
     </section>
 
     <section class="contact">
-        <h1>Contact Us</h1>
+        <h2>Contact Us</h2>
         <h3>Send us a message</h3>
         <form action="contact.html" method="get">
             <div>
-                <label for="fullname">Name</label>
+                <label for="fullname">Full Name</label>
                 <input type="text" id="fullname" name="fullname">
             </div>
     
@@ -134,14 +143,14 @@
             </div>
 
             <div class="map">
-                <h2>Location</h2>
+                <h3>Location</h3>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447385675967!2d-75.75712548445684!3d45.34992777909984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2slk!4v1648733802305!5m2!1sen!2slk"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                </div>
             </form>
     </section>
 
     <section>
-        <h1>Hours of Opertaion</h1>
+        <h3>Hours of Opertaion</h3>
         <table>
             <tr>
               <th>Days</th>
@@ -157,10 +166,11 @@
             </tr>
             </table>
     </section>
+
     <footer>
         <p>&copy; Copyright Three Star Media, 2022. </p>
         <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
     </footer>
-    </div>
+
 </body>
 </html>
