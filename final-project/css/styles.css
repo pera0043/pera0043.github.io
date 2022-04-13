@@ -1,10 +1,231 @@
-body {
-    background-color: aqua;
+html{
+    box-sizing: border-box;
 }
 
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+/* adding google fonts to the body and various headings */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 70px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header {
+    background-color: #222;
+    padding: 1rem;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+li {
+    margin: 1rem;
+    display: block;
+}
+
+li a {
+    color: #c78c06;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+.welcome {
+    width: 100%;
+    height: auto;
+    min-height: 535px;
+    background-size: cover;
+    background-image: url("/images/main-banner.jpg");
+
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 50px 10px 50px 10px;
+    position: relative;
+    top: 40px;
+}
+
+
+.welcome h1 {
+    color: #ffffff;
+    line-height: 100px;
+}
+
+.welcome p {
+    color: #ffffff;
+}
+
+.welcome-button {
+    background-color: #C78B07;
+    color: #222222;
+    padding: 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+
+.welcome a {
+    color: #222222;
+} 
+
+.fa-solid {
+    font-size: 20px;
+}
 
 .wrapper {
-    background-color: aquamarine;
-    width: 800px;
+    width: 95%;
     margin: auto;
 }
+
+.about {
+    background-color: #ffe6ac;
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    /* background-size: cover;
+    background-image: url("/images/about-us.jpg"); */
+}
+
+.img-about {
+    width: 100%;
+    padding: 20px;
+}
+
+.img-custom {
+    width: 100%;
+}
+
+.services {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.servicecontent {
+    background-color: #ffe6ac;
+    padding: 10px;
+}
+
+.services-button {
+    background-color: #222222;
+    color: #ffffff;
+    padding: 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+.services a {
+    color: #ffffff;
+} 
+
+.vision {
+    width: 100%;
+    height: 325px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/vision.jpg");
+}
+
+.vision h2 {
+    color: #ffffff;
+    padding-top: 40px;
+}
+
+.vision p {
+    color: #ffffff;
+}
+
+.learn-more-button {
+    background-color: #222222;
+    border: 1px solid #C78B07;
+    color: #ffffff;
+    padding: 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+
+.learn-more-button a {
+    color: #ffffff;
+}
+
+.team {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.ourteam {
+    background-color: #ffe6ac;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+hr {
+    border: 1px solid #c78c06;
+}
+
+.team img {
+    width: 100%;
+}
+
+
+/* @media screen and (min-width:750px) {
+ 
+.topnav img {
+    float: left;
+    height: 75px;
+    width: 75px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+.search-container {
+    float: right;
+}
+
+} */
