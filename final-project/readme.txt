@@ -1,4 +1,4 @@
-Sources
+Sources I refered to when coding this Web Page
 
 Background Images: 
 https://www.w3schools.com/css/css_background_image.asp
@@ -15,3 +15,6 @@ https://www.w3schools.com/tags/tag_span.asp
 Image Responsive: 
 https://www.w3schools.com/css/css_rwd_images.asp
 https://www.w3schools.com/howto/howto_css_full_page.asp
+
+!Important Rule:
+https://www.w3schools.com/css/css_important.asp
