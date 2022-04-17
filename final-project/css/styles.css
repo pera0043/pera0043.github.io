@@ -71,7 +71,6 @@ li:nth-child(1)  {
 ul {
     list-style-type: none;
     padding-left: 0;
-    list-style-type: none;
 }
 
 li {
@@ -83,7 +82,6 @@ li {
 a {
     color: #c78c06;
 }
-
 
 a:link, a:visited {
     text-decoration: none;
@@ -100,7 +98,6 @@ a:hover, a:active {
     min-height: 535px;
     background-size: cover;
     background-image: url("/images/main-banner.jpg");
-
 }
 
 .overlay {
@@ -130,7 +127,6 @@ a:hover, a:active {
     margin-top: 20px;
   }
 
-
 .welcome a {
     color: #222222;
 } 
@@ -138,6 +134,19 @@ a:hover, a:active {
 .fa-solid {
     font-size: 20px;
 }
+
+.search-container button {
+    float: right;
+    width: 10%;
+    padding: 10px;
+    background: #222;
+    color: #c68d00;
+    font-size: 17px;
+    border: 1px solid #c68d00;
+    border-left: none;
+    cursor: pointer;
+  }
+
 
 .wrapper {
     width: 95%;
@@ -155,7 +164,7 @@ a:hover, a:active {
 
 .img-about {
     width: 100%;
-    padding: 20px;
+    padding-top: 18px;
 }
 
 .img-custom {
@@ -216,7 +225,6 @@ a:hover, a:active {
     margin-top: 20px;
   }
 
-
 .learn-more-button a {
     color: #ffffff;
 }
@@ -273,6 +281,7 @@ textarea {
 table {
     width: 100%;
 }
+
 table th {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -281,14 +290,14 @@ table th {
     color: #222;
     margin: 12px 12px 12px 12px;
     border: 1px solid #222;
-  }
+}
 
 table tr {
     border-collapse: collapse;
     border: 1px solid #ddd;
     text-align: center;
     margin: 12px 12px 12px 12px
-  }
+}
 
 table td {
     padding: 12px 12px 15px;
@@ -296,9 +305,9 @@ table td {
     color: #222;
     margin: 12px 12px 12px 12px;
     border: 1px solid #222;
-  }
+}
 
-/* google map embed */
+/* embedding the google map */
 .map iframe {
     border: 0;
     height: 350px;
@@ -309,7 +318,7 @@ table td {
 footer {
     background-color: #222;
     color: #C78B07;
-    padding: 20px;
+    padding: 20px 0px 20px 0px;
     border: 1px solid #000;
 }
 
@@ -321,4 +330,166 @@ footer p {
 footer a {
     color: #c78c06;
     text-decoration: underline !important;
+}
+
+/* Adding media querie to add styles for minimum width of 760px and over. Gave the max width of 1200px for the wrapper.*/
+@media screen and (min-width:760px) {
+    .container {
+        width: 1200px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "digital marketing"
+        "video web print"
+    }
+
+    .digital {
+        grid-area: digital;
+        width: 600px;
+    }
+
+    .marketing {
+        grid-area: marketing;
+        width: 600px;
+    }
+
+    .video {
+        grid-area: video;
+    }
+    
+    .web {
+        grid-area: web;
+    }
+
+    .print {
+        grid-area: print;
+    }
+
+    nav li {
+        display: inline-block;
+        padding: 15px;
+    }
+    
+    li:nth-child(1)  {
+        display: inline;
+        padding: 12px 20px 12px 20px;
+    }
+
+    .welcome .overlay {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 50px 10px 50px 10px;
+        position: relative;
+        top: 40px;
+    }
+    
+    .welcome p {
+        line-height: 30px;
+    }
+
+    .topnavbg {
+        background-color: inherit;
+        height: auto;
+    }
+    
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 450px;
+        padding: 50px 30px 50px 30px;
+        margin: 20px 40px 20px 40px;
+        position: relative;
+        top: 40px;
+    }
+    
+    /* apply clearfix so the containing elements would not overflow because i have used float */
+    .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .about img {
+        width: 550px;
+        height: 300px;
+        /* apply float to left aligh the image */
+        float: left;
+        padding-right: 20px;
+    }
+
+    .about p {
+        line-height: 25px;
+    }
+
+    .about h2 {
+        padding-top: 30px;
+    }
+
+    .vision {
+        padding-top: 12px;
+        margin-bottom: 20px;
+    }
+
+    .vision p {
+        line-height: 25px;
+    }
+
+    .bob img {
+        float: right;
+        width: 600px;
+        height: 400px;
+    }
+
+    .john img {
+        float: left;
+        width: 600px;
+        height: 400px;
+        margin-right: 12px;
+    }
+
+    .team {
+        margin-bottom: 0px;
+    }
+
+    .ourteam {
+        height: 400px;
+        padding-left: 12px;
+    }
+
+    .ourteam p {
+        line-height: 25px;
+    }
+
+    .contact form {
+        float: left;
+        width: 50%;
+        padding-bottom: 50px;
+
+    }
+
+    .contact {
+        padding-top: 50px;
+    }
+
+    /* adding styles to contact input text box areas to overide the styles added to the mobile view */
+    input[type=text], select {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }  
+    
+    /* adds styles to message box text type area to overide the styles added to the mobile view */
+    textarea {
+        margin-top: 20px;
+    }
+    .contact h3 {
+        margin-bottom: 20px;
+    }
+
+    .map {
+  
+    }
+
+
 }
