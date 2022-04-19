@@ -8,7 +8,7 @@ html{
     box-sizing: inherit;
 }
 
-/* adding google fonts to the body and various headings */
+/* adding google fonts to the body and styling the fonts of various headings */
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -40,12 +40,14 @@ p {
     line-height: 20px;
 }
 
+/* Adding a background color to the header and aligning the elements inside to center */
 header {
     background-color: #222;
     padding: 1rem;
     text-align: center;
 }
 
+/* aligning the logo to top left and giving the logo a width and height */
 .topnav img {
     float: left;
     width: 70px;
@@ -58,6 +60,7 @@ header {
     background-color: #c68d00;
 }
 
+/* adding a background color to show home page is selected */
 li:nth-child(1)  {
     background-color: #C78B07;
     line-height: 40px;
@@ -68,6 +71,7 @@ li:nth-child(1)  {
     color: #222;
 }
 
+/* Styling the ul li inside the navigation bar. links decorated to underline when hover   */
 ul {
     list-style-type: none;
     padding-left: 0;
@@ -88,10 +92,10 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-    text-decoration: none;
-    color: #222;
+    text-decoration: underline;
 }
 
+/* Adds image through css and sizing the img to cover the entire container */
 .welcome {
     width: 100%;
     height: auto;
@@ -100,6 +104,7 @@ a:hover, a:active {
     background-image: url("/images/main-banner.jpg");
 }
 
+/* adding a overlay rectangle and padding to display as in the provided img  */
 .overlay {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 50px 10px 50px 10px;
@@ -146,7 +151,6 @@ a:hover, a:active {
     border-left: none;
     cursor: pointer;
   }
-
 
 .wrapper {
     width: 95%;
@@ -276,12 +280,16 @@ textarea {
     color: #C78B07;
     /* padding: 10px 10px; */
     margin-top: 12px;
+    margin-bottom: 10px;
 }
 
 table {
     width: 100%;
+    margin-top: 10px;
 }
 
+
+/* Adding styles to the table heading. both headings aligned to center with a bg color and a border */
 table th {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -299,6 +307,7 @@ table tr {
     margin: 12px 12px 12px 12px
 }
 
+/* Adding data to the table. All data has been aligned to left while giving it a border and other styles */
 table td {
     padding: 12px 12px 15px;
     text-align: left;
@@ -313,6 +322,11 @@ table td {
     height: 350px;
     width: 100%;
     padding-bottom: 12px;
+    margin-top: 10px;
+}
+
+.map {
+    margin-top: 10px;
 }
 
 footer {
@@ -332,29 +346,47 @@ footer a {
     text-decoration: underline !important;
 }
 
-/* Adding media querie to add styles for minimum width of 760px and over. Gave the max width of 1200px for the wrapper.*/
+
+/* Adding media querie to add styles for minimum width of 760px and over */
 @media screen and (min-width:760px) {
+
     .container {
-        width: 1200px;
-    }
+        width: 85%;
+        margin: 0 auto;
+    } 
+
+    /* .overlay {
+        width: 85%;
+        margin: 0 auto;
+    } */
 
     .grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "digital marketing"
-        "video web print"
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 500px 500px;
+        justify-content: center;
+        
+        /* grid-template-areas: 
+        'digital marketing'
+        'video web print' */
     }
+
+    .digital {grid-area: 'digital';}
+    .marketing {grid-area: 'marketing';}
+    .video {grid-area: 'video';}
+    .web {grid-area: 'web';}
+    .print {grid-area: 'print';}
 
     .digital {
         grid-area: digital;
-        width: 600px;
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 
     .marketing {
         grid-area: marketing;
-        width: 600px;
+        grid-column-start: 3;
+        grid-column-end: 6;
     }
 
     .video {
@@ -368,19 +400,36 @@ footer a {
     .print {
         grid-area: print;
     }
+    
+    .topnavbg {
+        background-color: inherit;
+        height: auto;
+    }
 
     nav li {
         display: inline-block;
         padding: 15px;
     }
-    
+
+    .search-container {
+        display: inline-block;
+        float: right;
+    }
+
+    .search-container button {
+        padding-left: 30px;
+    }
+
     li:nth-child(1)  {
         display: inline;
         padding: 12px 20px 12px 20px;
     }
-
+    /* styling the header and content inside it. */
     .welcome .overlay {
         background-color: rgba(0, 0, 0, 0.6);
+        height: 450px;
+        padding: 50px 30px 50px 30px;
+        margin: 20px 40px 20px 40px;
         padding: 50px 10px 50px 10px;
         position: relative;
         top: 40px;
@@ -388,20 +437,6 @@ footer a {
     
     .welcome p {
         line-height: 30px;
-    }
-
-    .topnavbg {
-        background-color: inherit;
-        height: auto;
-    }
-    
-    .overlay {
-        background-color: rgba(0, 0, 0, 0.6);
-        height: 450px;
-        padding: 50px 30px 50px 30px;
-        margin: 20px 40px 20px 40px;
-        position: relative;
-        top: 40px;
     }
     
     /* apply clearfix so the containing elements would not overflow because i have used float */
@@ -462,34 +497,41 @@ footer a {
         line-height: 25px;
     }
 
+    /* adding felx box to bring the map next to the contact form and to bring the table to the next line */
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start; /* aligning content on the main axis*/
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
     .contact form {
         float: left;
-        width: 50%;
+        width: 100%;
         padding-bottom: 50px;
-
     }
-
     .contact {
-        padding-top: 50px;
+        flex-grow: 1;
+        width: 50%;
+        padding-left: 60px;
+        padding-top: 30px;
     }
 
-    /* adding styles to contact input text box areas to overide the styles added to the mobile view */
-    input[type=text], select {
-        margin-top: 20px;
-        margin-bottom: 15px;
-    }  
-    
-    /* adds styles to message box text type area to overide the styles added to the mobile view */
-    textarea {
-        margin-top: 20px;
+    .map {
+        width: 50%;
+        padding-top: 100px;
+        padding-right: 50px;
     }
+    /* giving the table a order of 1 to make it the last item of the flex, and the map will go next to the contact form */ 
+    .table {
+        order: 1;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
     .contact h3 {
         margin-bottom: 20px;
     }
 
-    .map {
-  
+
     }
-
-
-}

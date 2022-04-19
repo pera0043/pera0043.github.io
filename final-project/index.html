@@ -18,12 +18,13 @@
     
 </head>
 <body>
+    
     <!--adds wrapper to each section to add different styles -->
     <header>
         <div class="topnav topnavbg">
-            <img src="images/logo.png" alt="Logo">
+            <img src="images/logo.png" alt="Logo" class="logo-img">
         </div>
-            <nav>
+            <nav class="navigation">
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="#">About Us</a></li>
@@ -31,13 +32,13 @@
                     <li><a href="#">Team</a></li>
                     <li><a href="#">Contact</a></li> 
                 </ul>
-                <div class="search-container">
-                    <form action="contact.html">
-                    <input type="text" placeholder="Search" name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
             </nav>
+            <div class="search-container">
+                <form action="contact.html">
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
     </header>
 
     <div class="welcome">
@@ -65,12 +66,13 @@
         </div>
     </div>
     <!--Grid starts here -->
-
+    
+<div class="container">
     <div class="grid">
         <div class="wrapper">
+            <h2>Our Services</h2>
             <div class="services digital">
-                <h2>Our Services</h2>
-            
+                
                 <img src="images/digital.jpg" alt="digital" class="img-custom">
 
                 <div class="servicecontent">
@@ -140,14 +142,14 @@
             </div>
         </div>
     </div>
+</div>
 
-
-
+    <!--Image for the vision added through css, wrapper class added to style in mobile version and container class to style the web because I encountered with issues when adding styles in wrapper for web  -->
     <div class="vision">
         <div class="wrapper container">
         <h2>Our Vision</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iusto, consectetur omnis ad iure possimus doloremque quisquam eius aperiam tenetur natus unde, explicabo error tempora labore, voluptates laboriosam excepturi distinctio.</p>
-
+        <!--added span to get the icon to correctly aligned inside of the button  -->
         <div class="learn-more-button">
             <a href="#">Learn More</a>
             <span class="fa-solid fa-caret-right"></span>
@@ -183,61 +185,61 @@
             </div>
         </div>
     </div>
+    <div class="flex"> 
+        <div class="contact float clearfix">
+            <div class="wrapper container">
+                <h2>Contact Us</h2>
+                <h3>Send us a message</h3>
+                <form action="contact.html" method="get">
+                    <div>
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname">
+                    </div>
+            
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+            
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
 
-    <div class="contact float clearfix">
-        <div class="wrapper container">
-            <h2>Contact Us</h2>
-            <h3>Send us a message</h3>
-            <form action="contact.html" method="get">
-                <div>
-                    <label for="fullname">Full Name</label>
-                    <input type="text" id="fullname" name="fullname">
-                </div>
-        
-                <div>
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email">
-                </div>
-        
-                <div>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message"></textarea>
-                </div>
-
-                <div>
-                    <button type="submit">Send</button>
-                </div>
-            </form>
+                    <div>
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
 
-    <section class="table">
-        <div class="wrapper container">
-        <h3>Hours of Opertaion</h3>
-            <table>
-                <tr>
-                <th>Days</th>
-                <th>Hours</th>
-                </tr>
-                <tr>
-                <td>Monday-Friday</td>
-                <td>9 AM - 6 PM</td>
-                </tr>
-                <tr>
-                <td>Saturday - Sunday</td>
-                <td>Closed</td>
-                </tr>
-            </table>
+        <section class="table">
+            <div class="wrapper container">
+            <h3>Hours of Opertaion</h3>
+                <table>
+                    <tr>
+                    <th>Days</th>
+                    <th>Hours</th>
+                    </tr>
+                    <tr>
+                    <td>Monday-Friday</td>
+                    <td>9 AM - 6 PM</td>
+                    </tr>
+                    <tr>
+                    <td>Saturday - Sunday</td>
+                    <td>Closed</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <div class="map">
+            <div class="wrapper container">
+                <h3>Location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447385675967!2d-75.75712548445684!3d45.34992777909984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2slk!4v1648733802305!5m2!1sen!2slk"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-    </section>
-
-    <div class="map">
-        <div class="wrapper container">
-            <h3>Location</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447385675967!2d-75.75712548445684!3d45.34992777909984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2slk!4v1648733802305!5m2!1sen!2slk"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </div>
-
+    </div>  
     <footer>
         <div class="wrapper container">
         <p>&copy; Copyright Three Star Media, 2022. </p>
