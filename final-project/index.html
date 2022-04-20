@@ -19,7 +19,7 @@
 </head>
 <body>
     
-    <!--adds wrapper to each section to add different styles -->
+    <!--adds a cladd to three sections that are on the navigation so i can add styles individualy -->
     <header>
         <div class="topnav topnavbg">
             <img src="images/logo.png" alt="Logo" class="logo-img">
@@ -36,11 +36,12 @@
             <div class="search-container">
                 <form action="contact.html">
                 <input type="text" placeholder="Search" name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
+                <span class="fa fa-search"></span>
                 </form>
             </div>
     </header>
 
+    <!--adds a class for the welcome section and a class of overlay to add a transparent box on top of the bg image. abutton with a class of span to adjust the button icon to align with the button text -->
     <div class="welcome">
             <div class="overlay">
                 <div class="wrapper container">
@@ -55,8 +56,8 @@
             </div>
     </div>
 
+    <!--adding a class of float and clearfix for the web version to left align the image and text to each sides and to stop content from overflowing -->
     <div class="about float clearfix">
-        
         <div class="wrapper container">
             <img src="images/about-us.jpg" alt="about us" class="img-about">
             <h2>About Us</h2>
@@ -65,84 +66,84 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse recusandae quas quis officiis, a in harum ipsam, totam commodi praesentium odio vel quod mollitia. Vero mollitia dicta provident quae quos?</p>
         </div>
     </div>
-    <!--Grid starts here -->
-    
-<div class="container">
-    <div class="grid">
-        <div class="wrapper">
-            <h2>Our Services</h2>
-            <div class="services digital">
-                
-                <img src="images/digital.jpg" alt="digital" class="img-custom">
 
-                <div class="servicecontent">
-                <h3>Digital Transformation</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nihil rem in. Numquam cupiditate dicta voluptatem accusantium id quasi quas voluptatibus placeat ullam? Neque tempore illum, maxime delectus voluptates atque.</p>
-                <div class="services-button">
-                    <a href="#">Digital Plans</a>
-                    <span class="fa-solid fa-caret-right"></span>
-                </div>
+    <!--Grid starts here. class of container to center the content to middle and applying grid to section the services boxes as shown in the img. -->
+    <div class="container">
+        <div class="grid">
+            <div class="wrapper box-1">
+                <h2>Our Services</h2>
+                <div class="services digital">
+                    
+                    <img src="images/digital.jpg" alt="digital" class="img-custom">
+
+                    <div class="servicecontent">
+                    <h3>Digital Transformation</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nihil rem in. Numquam cupiditate dicta voluptatem accusantium id quasi quas voluptatibus placeat ullam? Neque tempore illum, maxime delectus voluptates atque.</p>
+                    <div class="services-button">
+                        <a href="#">Digital Plans</a>
+                        <span class="fa-solid fa-caret-right"></span>
+                    </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="wrapper">
-            <div class="services marketing">
-                <img src="images/marketing.jpg" alt="marketing" class="img-custom">
-                <div class="servicecontent">
-                <h3>Marketing </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis saepe explicabo corrupti sit veniam libero praesentium iusto nemo iure vel, enim accusamus rerum pariatur laudantium repellat, eligendi blanditiis quas? Commodi.</p>
-                <div class="services-button">
-                    <a href="#">Marketing Plans</a>
-                    <span class="fa-solid fa-caret-right"></span>
-                </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="wrapper">
-            <div class="services video">
-                <img src="images/video.jpg" alt="video" class="img-custom">
-                <div class="servicecontent">
-                <h3>Video Production </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius blanditiis deleniti beatae tempore, ut libero magnam asperiores facere repudiandae ipsam repellendus mollitia possimus sapiente accusantium sequi debitis vel reiciendis vero.</p>
-                <div class="services-button">
-                    <a href="#">Video Plans</a>
-                    <span class="fa-solid fa-caret-right"></span>
-                </div>
+            <!--each services section is given a class of box to add styles accordingly -->
+            <div class="wrapper box-2">
+                <div class="services marketing">
+                    <img src="images/marketing.jpg" alt="marketing" class="img-custom">
+                    <div class="servicecontent">
+                    <h3>Marketing </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nihil rem in. Numquam cupiditate dicta voluptatem accusantium id quasi quas voluptatibus placeat ullam? Neque tempore illum, maxime delectus voluptates atque.</p>
+                    <div class="services-button">
+                        <a href="#">Marketing Plans</a>
+                        <span class="fa-solid fa-caret-right"></span>
+                    </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="wrapper">
-            <div class="services web">
-                <img src="images/web.jpg" alt="web" class="img-custom">
-                <div class="servicecontent">
-                <h3>Web Development </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempora at debitis vero, rerum quod corrupti atque possimus? Saepe qui, nisi unde est reiciendis provident itaque nam cupiditate nemo et.</p>
-                <div class="services-button">
-                    <a href="#">Web Plans</a>
-                    <span class="fa-solid fa-caret-right"></span>
-                </div>
+            
+            <div class="wrapper box-3">
+                <div class="services video">
+                    <img src="images/video.jpg" alt="video" class="img-custom">
+                    <div class="servicecontent">
+                    <h3>Video Production </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius blanditiis deleniti beatae tempore, ut libero magnam asperiores facere repudiandae ipsam repellendus mollitia possimus sapiente accusantium sequi debitis vel reiciendis vero.</p>
+                    <div class="services-button">
+                        <a href="#">Video Plans</a>
+                        <span class="fa-solid fa-caret-right"></span>
+                    </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="wrapper">
-            <div class="services print">
-                <img src="images/print.jpg" alt="print" class="img-custom">
-                <div class="servicecontent">
-                <h3>Print </h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi error, ut magni atque, eaque maxime rerum repudiandae quidem facere quo ratione quibusdam eius sit pariatur veritatis eveniet sequi, non quasi.</p>
-                <div class="services-button">
-                    <a href="#">Print Plans</a>
-                    <span class="fa-solid fa-caret-right"></span>
+            <div class="wrapper box-4">
+                <div class="services web">
+                    <img src="images/web.jpg" alt="web" class="img-custom">
+                    <div class="servicecontent">
+                    <h3>Web Development </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius blanditiis deleniti beatae tempore, ut libero magnam asperiores facere repudiandae ipsam repellendus mollitia possimus sapiente accusantium sequi debitis vel reiciendis vero.</p>
+                    <div class="services-button">
+                        <a href="#">Web Plans</a>
+                        <span class="fa-solid fa-caret-right"></span>
+                    </div>
+                    </div>
                 </div>
+            </div>
+
+            <div class="wrapper box-5">
+                <div class="services print">
+                    <img src="images/print.jpg" alt="print" class="img-custom">
+                    <div class="servicecontent">
+                    <h3>Print </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius blanditiis deleniti beatae tempore, ut libero magnam asperiores facere repudiandae ipsam repellendus mollitia possimus sapiente accusantium sequi debitis vel reiciendis vero.</p>
+                    <div class="services-button">
+                        <a href="#">Print Plans</a>
+                        <span class="fa-solid fa-caret-right"></span>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
     <!--Image for the vision added through css, wrapper class added to style in mobile version and container class to style the web because I encountered with issues when adding styles in wrapper for web  -->
     <div class="vision">
@@ -157,34 +158,40 @@
         </div>
     </div>
 
-    <div class="wrapper container">
-        <div class="team john">
+     <!--added a class of wrapper to stlye the mobile ver and container class to style the web. because i encountered some issues when applying styles to the wrapper  -->
+
+        <div class="wrapper container john">
             <h2>Our Team</h2>
-        
-            <img src="images/john.jpg" alt="john" class="img-team">
+            <div class="team john-doe">
 
-            <div class="ourteam">
-            <h3>John Doe</h3>
-            <h4>CEO and Co-owner</h4>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsam autem qui ex provident laboriosam officia quas maiores repellendus quis dolor, assumenda omnis veniam consequatur. Illum est ullam eveniet voluptatem.</p>
+                    
+                <img src="images/john.jpg" alt="john" class="img-team img-john">
+
+                <div class="ourteam john-info">
+                <h3>John Doe</h3>
+                <h4>CEO and Co-owner</h4>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsam autem qui ex provident laboriosam officia quas maiores repellendus quis dolor, assumenda omnis veniam consequatur. Illum est ullam eveniet voluptatem.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="wrapper container bob">
+            <div class="team bob-rite">
+            
+                <img src="images/bob.jpg" alt="bob" class="img-team img-bob">
+
+                <div class="ourteam bob-info">
+                <h3>Bob Rite</h3>
+                <h4>CFO and Co-owner</h4>
+                <hr>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur iste aliquam tenetur quaerat quas aliquid non ducimus fugiat. Suscipit unde accusamus sit molestias, eum nesciunt ad tempora est. Est, corrupti!</p>
+                </div>
             </div>
         </div>
     </div>
-    
-    <div class="wrapper container">
-        <div class="team bob">
-        
-            <img src="images/bob.jpg" alt="bob" class="img-team">
 
-            <div class="ourteam">
-            <h3>Bob Rite</h3>
-            <h4>CFO and Co-owner</h4>
-            <hr>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur iste aliquam tenetur quaerat quas aliquid non ducimus fugiat. Suscipit unde accusamus sit molestias, eum nesciunt ad tempora est. Est, corrupti!</p>
-            </div>
-        </div>
-    </div>
+     <!--flex box applied in the web version from contact to the table. to move the map next to the contact form and table to the bottom  -->
     <div class="flex"> 
         <div class="contact float clearfix">
             <div class="wrapper container">
@@ -232,7 +239,7 @@
                 </table>
             </div>
         </section>
-
+        <!-- google map embeded -->
         <div class="map">
             <div class="wrapper container">
                 <h3>Location</h3>
