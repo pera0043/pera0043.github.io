@@ -104,7 +104,7 @@ a:hover, a:active {
     height: auto;
     min-height: 535px;
     background-size: cover;
-    background-image: url("/images/main-banner.jpg");
+    background-image: url("../images/main-banner.jpg");
 }
 
 /* adding a overlay rectangle and padding to display as in the provided img  */
@@ -204,7 +204,7 @@ a:hover, a:active {
     height: 325px;
     background-size: cover;
     background-position: center;
-    background-image: url("/images/vision.jpg");
+    background-image: url("../images/vision.jpg");
 }
 
 .vision h2 {
