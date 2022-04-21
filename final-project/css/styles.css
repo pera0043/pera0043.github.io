@@ -193,7 +193,7 @@ a:hover, a:active {
     display: inline-block;
     font-size: 20px;
     margin-top: 20px;
-  }
+}
 
 .services a {
     color: #ffffff;
@@ -225,7 +225,7 @@ a:hover, a:active {
     display: inline-block;
     font-size: 20px;
     margin-top: 20px;
-  }
+}
 
 .learn-more-button a {
     color: #ffffff;
@@ -272,11 +272,10 @@ textarea {
 }
 
 .contact button {
-    width: 55px;
-    height: 45px;
+    font-size: 20px;
     background-color: #222;
     color: #C78B07;
-    /* padding: 10px 10px; */
+    padding: 7px 7px;
     margin-top: 12px;
     margin-bottom: 10px;
 }
@@ -288,8 +287,8 @@ table {
 
 /* Adding styles to the table heading. both headings aligned to center with a bg color and a border */
 table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     text-align: center;
     background-color: #ffe6ac;
     color: #222;
@@ -354,6 +353,7 @@ footer a {
 
     .welcome {
         padding: 1rem;
+        object-fit: cover;
     }
 
     .topnavbg {
@@ -368,7 +368,8 @@ footer a {
     /* styling the top navigation. positioning the logo li a items.   */
     header {
         background-color: #222;
-        padding: 15px 30px;
+        padding: 25px 30px 25px 30px;
+        /* padding: 15px 30px; */
         text-align: center;
         display: inline-block;
         width: 100%;
@@ -459,6 +460,8 @@ footer a {
     }
     .welcome {
         margin-left: 0px;
+        background-size: cover;
+        background-position: center;
     }
     .welcome p {
         line-height: 30px;
@@ -515,6 +518,7 @@ footer a {
         grid-column-start: 1;
         grid-column-end: 3;
         padding-top: 0px;
+        margin-left: 18px;
     }
 
     .box-4 {
@@ -527,6 +531,7 @@ footer a {
         grid-column-start: 5;
         grid-column-end: 7;
         margin-top: 0px;
+        margin-right: 18px;
     }
 
     .services-button {
@@ -543,39 +548,8 @@ footer a {
         line-height: 25px;
     }
 
-    /* this is how i did the services section, but was not sure whether is was correct so tried the flxbox instead  */
-    /* .bob img {
-        float: right;
-        width: 600px;
-        height: 400px;
-        object-fit: cover;
-        object-fit: cover;
-    }
-
-    .john img {
-        float: left;
-        width: 600px;
-        height: 400px;
-        object-fit: cover;
-    }
-
-    .team {
-        margin-bottom: 0px;
-    }
-
-    .ourteam {
-        height: 400px;
-        padding-left: 12px;
-        overflow: hidden;
-    }
-
-    .ourteam p {
-        line-height: 25px;
-        padding-top: 10px;
-    } */
-
-    /* was not sure the above code i have used is the correct way to do the team section. so i added another code using flex box option */
-    .john-doe {
+    /* used flex for the services section, but the content boxes didnt alin to the height of the images there were white space so created another code below */
+    /* .john-doe {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -613,9 +587,41 @@ footer a {
 
     .team p {
         line-height: 25px;
+    }  */
+
+
+    /* was not sure the above code i have used is the correct way to do the team section. so i added another code  */
+    .bob img {
+        float: right;
+        width: 600px;
+        height: 400px;
+        object-fit: cover;
+        object-fit: cover;
     }
 
-    /* adding felx box to bring the map next to the contact form and to bring the table to the next line */
+    .john img {
+        float: left;
+        width: 600px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .team {
+        margin-bottom: 0px;
+    }
+
+    .ourteam {
+        height: 400px;
+        padding-left: 12px;
+        overflow: hidden;
+    }
+
+    .ourteam p {
+        line-height: 25px;
+        padding-top: 10px;
+    }
+
+    /* adding felx box to bring the map next to the contact form and to bring the table to the bottom */
     .flex {
         display: flex;
         flex-direction: row;
@@ -650,5 +656,5 @@ footer a {
     .contact h3 {
         margin-bottom: 20px;
     }
-    
+
     }
